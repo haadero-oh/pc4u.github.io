@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PC4U: Track Your Order </title>
+        <link rel="stylesheet" href="src/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One">
+        <script src="https://kit.fontawesome.com/e9a8b15c90.js" crossorigin="anonymous"></script>
+      </head>
+  
+      <nav class = "navbar">
+        <div class = "navbar-logo">
+          <a href = "index.html"><img src = "src/logo/Frame 1.svg"/></a>
+        </div>
+        <div class = "navbar-items"> <a href = "order-page.html">Order Now</a> </div>
+        <div class = "navbar-items">  <a href = "product-list.html">Products</a></div>
+        <div class = "navbar-items"><a href = "branch-locations.html">Locations</a></div>
+        <div class = "navbar-items"> <a href = "track-order.html">Track Order</a></div>
+        <div class = "navbar-login"> <button type="button" onclick="window.location.href = 'employee-login-page.html';">Employee Login</button>
+        
+      </nav>
+
+      <body class = "contents">
+        <style>
+          .contents{
+            display: flex;
+            flex: 1;
+            background-image: linear-gradient(#264AFF, #001A99);
+          }
+        .heading-text{
+          margin-left: 10em;
+          color: #FCFAFF;
+          margin-top: 16px;
+          margin-bottom: 32px;
+        }
+
+        .sub-text{
+          margin-left: 10em;
+          color: #FCFAFF;
+          margin-top: 32px;
+          margin-bottom: 32px;
+        }
+
+        form{
+            margin-left: 10em;
+            margin-right: 10em;
+        }
+
+        input[type=text] {
+            border: 2px solid #EDFF26;
+            border-radius: 4px;
+            background-color: transparent;
+            width: 512px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+        }
+
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #EDFF26;
+            opacity: 1; /* Firefox */
+            font-family: Poppins;
+        }
+
+        input[type=text]:focus {
+        background-color: #EDFF26;
+        color:#001A99;
+        outline: none;
+        }
+
+        form > button{
+          background-color: #EDFF26;
+          border: none;
+          border-radius: 4px;
+          padding: 1em 4em 1em 4em;
+          color: #001A99;
+          font-family: Poppins;
+          font-weight: bold;
+          margin-top: 2em;
+          margin-bottom: 2em;
+        }
+          
+
+          @media only screen and (max-width: 720px) {
+            input[type=text] {
+            width: 240px;
+            }
+            form{
+            margin-left: 5em;
+            margin-right: 5em;
+        }
+        .heading-text{
+          margin-left: 5em;
+
+        }
+
+        .sub-text{
+          margin-left: 5em;
+
+        }
+          }
+        </style>
+        
+  
+        <div class ="rectangle"></div>
+        <div class ="heading-text"><h1>TRACK <span style= "color:#EDFF26">ORDER</span></h1></div>
+
+        <div class ="sub-text"><h6>Enter tracking number here;</h6></div>
+
+        <form method="post">
+            <script>
+              function checkInput() {
+                var userInput = document.getElementById("tracking-number").value;
+                if (!userInput.startsWith("PC4U")) {
+                alert("Input must start with 'PC4U'");
+                return false;
+                }
+              }
+
+              function sampleInput(){
+                var userInput = document.getElementById("tracking-number").value;
+                if(userInput === "PC4USMPL00001"){
+                  alert("Your order PC4USMPL00001 is ready for pickup/delivery on September 29, 2023.");
+                  return false;
+                }
+              }
+            </script>
+            <input type="text" id="tracking-number" name="tracking-number" placeholder="Tracking Number" required>
+            <br>
+            <button type="submit" id="tracking-number" onclick="checkInput(),sampleInput()">Check Order</button>
+        </form>
+
+        
+
+
+      </body>
+  
+      <footer class = "footer">
+        <p>Copyright 2023 | PC4U | All Rights Reserved | Website by haadero_oh</p>
+        <div class = "footer-socialmedia">
+          <div class = "socmed"><span style = "font-size: 24px"><i class="fa-brands fa-facebook"></i></span></div>
+          <div class = "socmed"><span style = "font-size: 24px"><i class="fa-brands fa-square-x-twitter"></i></span></div>
+          <div class = "socmed"><span style = "font-size: 24px"><i class="fa-brands fa-square-instagram"></i></span></div>
+        </div>
+      </footer>
+</html>

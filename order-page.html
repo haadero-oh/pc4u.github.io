@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PC4U: Order Page </title>
+        <link rel="stylesheet" href="src/style.css">
+        <link rel="stylesheet" href="src/order-page.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One">
+        <script src="https://kit.fontawesome.com/e9a8b15c90.js" crossorigin="anonymous"></script>
+      </head>
+  
+      <nav class = "navbar">
+        <div class = "navbar-logo">
+          <a href = "index.html"><img src = "src/logo/Frame 1.svg"/></a>
+        </div>
+        <div class = "navbar-items"> <a href = "order-page.html">Order Now</a> </div>
+        <div class = "navbar-items">  <a href = "product-list.html">Products</a></div>
+        <div class = "navbar-items"><a href = "branch-locations.html">Locations</a></div>
+        <div class = "navbar-items"> <a href = "track-order.html">Track Order</a></div>
+        <div class = "navbar-login"> <button type="button" onclick="window.location.href = 'employee-login-page.html';">Employee Login</button>
+        
+      </nav>
+
+      <body class = "contents">
+        <div class ="rectangle"></div>
+        <div class ="heading-text"><h1><span style= "color:#EDFF26">ORDER</span> PAGE</h1></div>
+        <div class = order-forms>
+            <form method="post" id="orderForm" onsubmit="return checkDisabledOptions()">
+                <label for="name"><h6>Customer Name<span class="required-indicator">*</span>:</h6></label>
+                <input type="text" id="name" name="name" placeholder="Name:" required>
+                <label for="address"><h6>Customer Address<span class="required-indicator">*</span>:</h6></label>
+                <input type="text" id="address" name="address" placeholder="Address" required>
+                <label for="contactno"><h6>Contact Number<span class="required-indicator">*</span>:</h6></label>
+                <input type="text" id="contactno" name="contactno" placeholder="Contact Number" required>
+                <label for="branch"><h6>Branch<span class="required-indicator">*</span>:</h6></label>
+                <select name="branch" id="branch" required>
+                    <option value="" disabled selected>Select branch</option>
+                    <option value="ncccvp">NCCC VP</option>
+                    <option value="gaisanodavao">Gaisano Mall Davao</option>
+                    <option value="panabo">Panabo</option>
+                  </select>
+                <label for="payment"><h6>Payment Option<span class="required-indicator">*</span>:</h6></label>
+                <select name="payment" id="payment" required>
+                    <option value="" disabled selected>Select payment option</option>
+                    <option value="cash">Cash on Pickup/Delivery</option>
+                    <option value="creddebit">Credit/Debit on Pickup/Delivery</option>
+                    <option value="moneyapp">Maya/GCash on Pickup/Delivery</option>
+                    <option value="homecredit">Home Credit</option>
+                    </select>
+                <label for="build"><h6>Select Build<span class="required-indicator">*</span>:</h6></label>
+                <select name="build" id="build" required>
+                    <option value="" disabled selected>Select your build</option>
+                    <option value="value">Value</option>
+                    <option value="plus">Plus</option>
+                    <option value="pro">Pro</option>
+                    <option value="ultra">Ultra</option>
+                  </select>
+                <label for="receive-type"><h6>Pickup/Delivery<span class="required-indicator">*</span>:</h6></label>
+                <select name="receive-type" id="receive-type" required>
+                    <option value="" disabled selected>Pickup or Deliver</option>
+                    <option value="value">Pickup</option>
+                    <option value="plus">Deliver</option>
+                  </select>
+                <label for="extra-details"><h6>Extra Details:</h6></label>
+                  <textarea name="extra-details" placeholder="Any extra details:"></textarea>
+                <button type="submit">Send Order</button>
+            </form>
+
+        </div>
+
+      </body>
+  
+      <footer class = "footer">
+        <p>Copyright 2023 | PC4U | All Rights Reserved | Website by haadero_oh</p>
+        <div class = "footer-socialmedia">
+          <div class = "socmed"><span style = "font-size: 24px"><i class="fa-brands fa-facebook"></i></span></div>
+          <div class = "socmed"><span style = "font-size: 24px"><i class="fa-brands fa-square-x-twitter"></i></span></div>
+          <div class = "socmed"><span style = "font-size: 24px"><i class="fa-brands fa-square-instagram"></i></span></div>
+
+        </div>
+      </footer>
+</html>

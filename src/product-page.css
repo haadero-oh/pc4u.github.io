@@ -1,0 +1,126 @@
+.contents{
+  display: flex;
+  flex: 1;
+  background-image: linear-gradient(#264AFF, #001A99);
+}
+
+.go-back{
+  display:inline-flex;
+  align-items: center;
+  margin-top: 2em;
+  margin-left: 10em;
+  column-gap: 16px;
+  color:#FCFAFF;
+}
+
+.go-back-text > a:link{
+  text-decoration: none;
+}
+.go-back-text > a:hover{
+  text-decoration: none;
+  color:#EDFF26
+}
+
+.heading-text{
+margin-left: 10em;
+color: #FCFAFF;
+margin-top: 16px;
+margin-bottom: 32px;
+}
+.product-section{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-bottom: 5em;
+    margin-top: 2.5em;
+    column-gap: 24px;
+  }
+  
+  .product-section-contents-1{
+    background-color: #264AFF;
+    opacity: 1;
+    background-image:  linear-gradient(135deg, #EDFF26 25%, transparent 25%), linear-gradient(225deg, #EDFF26 25%, transparent 25%), linear-gradient(45deg, #EDFF26 25%, transparent 25%), linear-gradient(315deg, #EDFF26 25%, #264AFF 25%);
+    background-position:  11px 0, 11px 0, 0 0, 0 0;
+    background-size: 22px 22px;
+    background-repeat: repeat;
+    border-radius: 10px;
+    padding: 2em;
+    width: 240px;
+    min-height: 480px;
+  }
+
+  .product-section-contents-2{
+    text-wrap:wrap;
+    min-height: auto;
+    color: #FCFAFF;
+  }
+
+  .rectangle{
+    margin-top: 2em;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-bottom: 1em; 
+    width: 320px;
+    height: 32px;
+    background-color: #EDFF26;
+  }
+
+  .product-section-contents-2 > ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding:0;
+    font-family: Poppins;
+  }
+
+  .product-section-contents-2 > ul > li {
+    margin-bottom:1em;
+  }
+  
+  .price-tag{
+    margin-top: 1em;
+    background-color: #EDFF26;
+    padding: 1.5em;
+    color:#001A99;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+
+  @media only screen and (max-width: 720px) {
+    .product-section{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        margin-left: 5em;
+        margin-right: 5em;
+        row-gap: 32px;
+        margin-bottom: 5em;
+        margin-top: 2.5em;
+        column-gap: 24px;
+    }
+    .product-section-contents-1{
+        min-height:240px;
+    }
+    .product-section-contents-2{
+      text-wrap:wrap;
+    }
+    .rectangle{
+      margin-top: 2.5em;
+      margin-left: 5em;
+      margin-right: 5em;
+      margin-bottom: 1em; 
+      width: 180px;
+      height: 32px;
+      background-color: #EDFF26;
+    }
+    .heading-text{
+    margin-left: 5em;
+    color: #FCFAFF;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    }
+
+
+  }

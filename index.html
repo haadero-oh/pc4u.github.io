@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title> PC4U: We build 4 U </title>
+      <link rel="stylesheet" href="src/style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One">
+      <script src="https://kit.fontawesome.com/e9a8b15c90.js" crossorigin="anonymous"></script>
+    </head>
+
+    <nav class = "navbar">
+      <div class = "navbar-logo">
+        <a href = "index.html"><img src = "src/logo/Frame 1.svg"/></a>
+      </div>
+      <div class = "navbar-items"> <a href = "order-page.html">Order Now</a> </div>
+      <div class = "navbar-items">  <a href = "product-list.html">Products</a></div>
+      <div class = "navbar-items"><a href = "branch-locations.html">Locations</a></div>
+      <div class = "navbar-items"> <a href = "track-order.html">Track Order</a></div>
+      <div class = "navbar-login"> <button type="button" onclick="window.location.href = 'employee-login-page.html';">Employee Login</button>
+      
+    </nav>
+
+    <body class = "contents">
+      <style>
+        .contents{
+          display: flexbox;
+          flex: 1;
+          background-image: linear-gradient(#264AFF, #001A99);
+        }
+        .text{
+          margin-left: 10em;
+          margin-right: 10em;
+          color: #FCFAFF;
+          margin-top: 16px;
+          margin-bottom: 16px;
+        }
+        .home-boxes{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-left: 10em;
+          margin-right: 10em;
+          margin-bottom: 5em;
+          margin-top: 2.5em;
+          row-gap: 24px;
+          column-gap: 24px;
+        }
+        .home-boxes-classes{
+          background-color: #EDFF26;
+          width: 360px;
+          border-radius: 10px;
+          padding: 2em;
+          min-height: auto;
+          min-width: auto;
+          color: #000E52;
+        }
+
+        .home-boxes-classes > img{
+            height: auto;
+            max-width: 100%;
+            border-radius: 12px;
+            margin-bottom: 1em;
+            border: 1px solid #000E52; 
+          }
+
+        @media only screen and (max-width: 720px) {
+        .home-boxes{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          min-height: auto;
+          min-width: auto;
+          width: auto;
+          margin-left: 5em;
+          margin-right: 5em;
+          margin-bottom: 5em;
+          margin-top: 5em;
+          row-gap: 24px;
+        }
+        .text{
+          margin-left: 5em;
+          margin-right: 5em;
+          word-wrap: break-word;
+
+        }
+        .home-boxes-classes{
+          width:auto;
+        }
+        
+        }
+      </style>
+      
+
+      <div class ="rectangle"></div>
+      <div class ="text"><h1>PC <span style= "color:#EDFF26">BUILDING.</span> <BR> WE DO IT 4 U.</h1></div>
+      <div class ="text"><h5>Making it <span style= "color:#EDFF26">happen</span> 4 U. 😃</h5></div>
+      <div class ="text"><p>We are a Davao City-based business making quality pre-build and bespoke PCs at a great price for you since 2018.</p></div>
+      
+      <div class = "home-boxes">
+        <div class = "home-boxes-classes"> <img src="src/home-pix/user.jpg"/><h6>Quality Assured</h6><p>Our builds are made with quality parts and built by our highly-skilled team. We also provide one year warranty and two months return and money-back guarantee.</p> </div>
+        <div class = "home-boxes-classes"> <img src="src/home-pix/money.jpg"/><h6>Great Price</h6><p>We get our parts at wholesale prices so that we can pass the savings to you. Also very negotiable about the parts we put in, whether pre-build or bespoke.</p> </div>
+        <div class = "home-boxes-classes"> <img src="src/home-pix/parts.jpg"/><h6>Customizable</h6><p>Our prebuilds are very customizable based on your needs. You can also be fancy when dealing with us for your bespoke builds.</p> </div>
+      </div>
+
+    </body>
+
+    <footer class = "footer">
+      <p>Copyright 2023 | PC4U | All Rights Reserved | Website by haadero_oh</p>
+      <div class = "footer-socialmedia">
+        <div class = "socmed"><span style = "font-size: 24px"><i class="fa-brands fa-facebook"></i></span></div>
+        <div class = "socmed"><span style = "font-size: 24px"><i class="fa-brands fa-square-x-twitter"></i></span></div>
+        <div class = "socmed"><span style = "font-size: 24px"><i class="fa-brands fa-square-instagram"></i></span></div>
+      </div>
+    </footer>
+</html>

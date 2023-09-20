@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PC4U: Employee Area - Order Log </title>
+        <link rel="stylesheet" href="src/employee-area.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One">
+        <script src="https://kit.fontawesome.com/e9a8b15c90.js" crossorigin="anonymous"></script>
+    </head>
+
+    <nav class = "navbar">
+      <div class = "navbar-logo">
+        <img src = "src/logo/Frame 1.svg"/>
+      </div>
+      <div class = "navbar-items" > <a href = "employee-area.html">Employee Area</a> </div>
+      <div class = "navbar-items">Log-out</div>
+    </nav>
+
+    <body>
+        <style>
+          .heading-text{
+          margin-left: 10em;
+          color: #FCFAFF;
+          margin-top: 16px;
+          margin-bottom: 32px;
+          }
+
+          .sub-text{
+          margin-left: 10em;
+          color: #FCFAFF;
+          margin-top: 32px;
+          margin-bottom: 32px;
+          }
+
+          form{
+            margin-left: 10em;
+            margin-right:10em;
+          }
+
+          table{
+            margin: 2em 5em 2em 5em;
+            font-family: Poppins;
+            border-collapse: separate; 
+            border-spacing: 0.5em;
+            text-align: center;
+          }
+
+          th{
+            background-color: #EDFF26;
+            padding: 1em;
+          }
+
+          td{
+            border: 1px solid #EDFF26;
+            padding: 1em;
+            color:#FCFAFF;
+          }
+
+          td select{
+            border: none;
+            background-color: transparent;
+            color: #FCFAFF;
+            padding: 1em;
+            font-family: Poppins;
+            font-size:1em;
+            border-radius: 4px;
+          }
+          td select:focus{
+            border: none;
+            background-color: #EDFF26;
+            color: #001A99;
+            border-radius: 4px;
+            padding: 1em;
+            font-family: Poppins;
+            font-size:1em;
+          }
+
+          td input[type=date]{
+            border: none;
+            background-color: transparent;
+            color: #FCFAFF;
+            padding: 1em;
+            font-family: Poppins;
+            font-size:1em;
+            border-radius: 4px;
+          }
+          td input[type=date]:focus{
+            border: none;
+            background-color: #EDFF26;
+            color: #001A99;
+            border-radius: 4px;
+            padding: 1em;
+            font-family: Poppins;
+            font-size:1em;
+          }
+        </style>
+
+        <div class ="rectangle"></div>
+        <div class ="heading-text"><h1>ORDER <span style= "color:#EDFF26">LOG</span></h1></div>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Contact Number</th>
+                <th>Payment Method</th>
+                <th>Branch</th>
+                <th>Pre-built Model</th>
+                <th>Pickup or Deliver</th>
+                <th>Extra Details</th>
+                <th>Status</th>
+                <th>Pickup/Deliver Date</th>
+            </tr>
+            <tr>
+                <td>Hym Verdan</td>
+                <td>Panabo</td>
+                <td>09611234567</td>
+                <td>Home Credit</td>
+                <td>Panabo</td>
+                <td>Ultra</td>
+                <td>Pickup</td>
+                <td>N/A</td>
+                <td id="status-order" name="status-order">
+                    <select name="branch" id="branch">
+                        <option value="" disabled selected>Select</option>
+                        <option value="processing">Processing</option>
+                        <option value="building">Building</option>
+                        <option value="ready">Ready to Ship/Deliver</option>
+                        <option value="done">Shipped/Delivered</option>
+                      </select>
+                </td>
+                <td>
+                    <input type="date" id="deliver-date" name="deliver-date">
+                </td>
+            </tr>
+        </table>
+
+    </body>
+
+    <footer class = "footer">
+      <p>Copyright 2023 | PC4U | All Rights Reserved | Website by haadero_oh</p>
+      <div class = "footer-socialmedia">
+        <div class = "socmed"><span style = "font-size: 24px"><i class="fa-brands fa-facebook"></i></span></div>
+        <div class = "socmed"><span style = "font-size: 24px"><i class="fa-brands fa-square-x-twitter"></i></span></div>
+        <div class = "socmed"><span style = "font-size: 24px"><i class="fa-brands fa-square-instagram"></i></span></div>
+      </div>
+    </footer>
+</html>

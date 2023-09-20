@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> PC4U: Products </title>
+        <link rel="stylesheet" href="src/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One">
+        <script src="https://kit.fontawesome.com/e9a8b15c90.js" crossorigin="anonymous"></script>
+      </head>
+  
+      <nav class = "navbar">
+        <div class = "navbar-logo">
+          <a href = "index.html"><img src = "src/logo/Frame 1.svg"/></a>
+        </div>
+        <div class = "navbar-items"> <a href = "order-page.html">Order Now</a> </div>
+        <div class = "navbar-items">  <a href = "product-list.html">Products</a></div>
+        <div class = "navbar-items"><a href = "branch-locations.html">Locations</a></div>
+        <div class = "navbar-items"> <a href = "track-order.html">Track Order</a></div>
+        <div class = "navbar-login"> <button type="button" onclick="window.location.href = 'employee-login-page.html';">Employee Login</button>
+        
+      </nav>
+
+      <body class = "contents">
+        <style>
+          .contents{
+            display: flex;
+            flex: 1;
+            background-image: linear-gradient(#264AFF, #001A99);
+          }
+          .heading-text{
+          text-wrap:wrap;
+          margin-left: 10em;
+          color: #FCFAFF;
+          margin-top: 16px;
+          margin-bottom: 32px;
+          }
+          
+          .product-boxes{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-left: 10em;
+            margin-right: 10em;
+            margin-top: 2.5em;
+            margin-bottom: 3em;
+            column-gap: 16px;
+            row-gap:16px;
+            flex-wrap: wrap;
+
+          }
+          .product-boxes-details{
+            text-align: center;
+            background-color: #EDFF26;
+            color: #000E52;
+            width: 240px;
+            border-radius: 10px 10px 20px 20px;
+            padding: 2em;
+            min-height: auto;
+          }
+
+          .product-boxes-details > button{
+            background-color: #001A99;
+            border: none;
+            border-radius: 4px;
+            padding: 1em 4em 1em 4em;
+            color:#FCFAFF;
+            font-family: Poppins;
+            margin-top: 2em;
+          }
+
+          .product-boxes-details > button:hover{
+            color:#EDFF26;
+          }
+
+          .product-boxes-details > img{
+            height: auto;
+            max-width: 100%;
+            border-radius: 12px;
+            margin-bottom: 1em;
+          }
+
+          @media only screen and (max-width: 720px) {
+          .product-boxes{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 5em;
+          margin-right: 5em;
+          margin-bottom: 5em;
+          margin-top: 2.5em;
+          row-gap: 16px;
+          flex-wrap:wrap;
+
+          }
+
+          .heading-text{
+          margin-left: 5em;
+          margin-right: 5em;
+          color: #FCFAFF;
+          margin-top: 16px;
+          margin-bottom: 32px;
+          }
+          .product-boxes-details{
+            width: auto;
+          }
+        }
+        </style>
+        
+  
+        <div class ="rectangle"></div>
+        <div class ="heading-text"><h1>OUR <span style= "color:#EDFF26">BUILDS</span></h1></div>
+
+         <div class ="product-boxes">
+          <div class = "product-boxes-details">
+            <img src="src/sample.jpg" alt="sample">
+            <h6>Value</h6>
+            <p>Ryzen 3/Core i3 build</p>
+            <button onclick="document.location = 'product-page-valuebuild.html'">Learn More</button>
+
+          </div>
+          <div class = "product-boxes-details">
+            <img src="src/sample.jpg" alt="sample">
+            <h6>Plus</h6>
+            <p>Ryzen 5/Core i5 build</p>
+            <button onclick="document.location = 'product-page-plusbuild.html'">Learn More</button>
+          </div>
+          <div class = "product-boxes-details">
+            <img src="src/sample.jpg" alt="sample">
+            <h6>Pro</h6>
+            <p>Ryzen 7/Core i7 build</p>
+            <button onclick="document.location = 'product-page-probuild.html'">Learn More</button>
+            
+          </div>
+          <div class = "product-boxes-details">
+            <img src="src/sample.jpg" alt="sample">
+            <h6>Ultra</h6>
+            <p>Ryzen 9 or Threadripper/Core i9 build</p>
+            <button onclick="document.location = 'product-page-ultrabuild.html'">Learn More</button>
+          </div>
+         </div>
+      </body>
+  
+      <footer class = "footer">
+        <p>Copyright 2023 | PC4U | All Rights Reserved | Website by haadero_oh</p>
+        <div class = "footer-socialmedia">
+          <div class = "socmed"><span style = "font-size: 24px"><i class="fa-brands fa-facebook"></i></span></div>
+          <div class = "socmed"><span style = "font-size: 24px"><i class="fa-brands fa-square-x-twitter"></i></span></div>
+          <div class = "socmed"><span style = "font-size: 24px"><i class="fa-brands fa-square-instagram"></i></span></div>
+        </div>
+      </footer>
+</html>

@@ -1,0 +1,242 @@
+html, body{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    }
+
+h1{
+  font-family: Dela Gothic One;
+  line-height: 110%;
+  font-size: 56px;
+  margin: auto;
+  letter-spacing: 1px;
+}
+
+h2{
+  font-family: Dela Gothic One;
+  line-height: 110%;
+  font-size: 44px;
+  margin: auto;
+  letter-spacing: 1px;
+}
+
+h3{
+  font-family: Dela Gothic One;
+  line-height: 110%;
+  font-size: 36px;
+  margin: auto;
+  letter-spacing: 1px;
+}
+h4{
+  font-family: Dela Gothic One;
+  line-height: 110%;
+  font-size: 32px;
+  margin: auto;
+  letter-spacing: 1px;
+}
+h5{
+  font-family: Dela Gothic One;
+  line-height: 110%;
+  font-size: 26px;
+  margin: auto;
+  letter-spacing: 1px;
+}
+
+h6{
+  font-family: Dela Gothic One;
+  line-height: 110%;
+  font-size: 22px;
+  margin: auto;
+  letter-spacing: 1px;
+}
+
+p{
+  font-family: Poppins;
+  line-height: 140%;
+}
+
+
+
+/* For the Navbar */
+
+.navbar-items > a:link, a:visited{
+  color:#FCFAFF;
+  text-decoration: none;
+}
+
+.navbar-items > a:hover{
+  color: #EDFF26;
+  text-decoration: none;
+}
+
+.navbar{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: Poppins;
+  row-gap: 1em;
+ }
+
+.navbar-logo{
+  align-items: center;
+  margin-right: 1em;
+  text-align: center;
+ }
+
+.navbar-items{
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  font-family: Dela Gothic One;
+  color: #FCFAFF;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.navbar-login{
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.navbar-login > button{
+  border: 2px solid #EDFF26;
+  border-radius: 4px;
+  background: transparent;
+  padding: 0.5em 2em 0.5em 2em;
+  font-family: Poppins;
+  color:#FCFAFF;
+}
+
+.navbar-login > button:hover{
+  border: 2px solid #EDFF26;
+  border-radius: 4px;
+  background: #EDFF26;
+  padding: 0.5em 2em 0.5em 2em;
+  font-family: Poppins;
+  color:#000E52;
+}
+
+.rectangle{
+  margin-top: 5em;
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-bottom: 1em; 
+  width: 320px;
+  height: 32px;
+  background-color: #EDFF26;
+}
+
+/* For the Footer */
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  color: #000E52;
+  background-color: #EDFF26;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-family: Poppins;
+  margin-top: auto;
+}
+.footer-socialmedia{
+  display: flex;
+  align-items: center;
+}
+.socmed{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 1em;
+}
+
+@media only screen and (max-width: 720px) {
+  h1{
+    font-family: Dela Gothic One;
+    line-height: 110%;
+    font-size: 48px;
+    margin: auto;
+  }
+  
+  h2{
+    font-family: Dela Gothic One;
+    line-height: 110%;
+    font-size: 38px;
+    margin: auto;
+  }
+  
+  h3{
+    font-family: Dela Gothic One;
+    line-height: 110%;
+    font-size: 32px;
+    margin: auto;
+  }
+  h4{
+    font-family: Dela Gothic One;
+    line-height: 110%;
+    font-size: 26px;
+    margin: auto;
+  }
+  h5{
+    font-family: Dela Gothic One;
+    line-height: 110%;
+    font-size: 20px;
+    margin: auto;
+  }
+  
+  h6{
+    font-family: Dela Gothic One;
+    line-height: 110%;
+    font-size: 18px;
+    margin: auto;
+  }
+  
+  p{
+    font-family: Poppins;
+    line-height: 140%;
+  }
+  
+  .rectangle{
+    margin-top: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 1em; 
+    width: 180px;
+    height: 32px;
+  }
+  .navbar{
+    margin-left: 5em;
+    margin-right: 5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .navbar-items{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .navbar-login{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-socialmedia{
+    display: flex;
+    justify-content: center;
+  }
+
+}
